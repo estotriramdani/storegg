@@ -19,6 +19,7 @@
     "max-len": "off",
     "@next/next/no-img-element": "off",
     "object-curly-spacing": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "quote-props": "off"
   }
 }

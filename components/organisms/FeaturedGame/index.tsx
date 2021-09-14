@@ -35,7 +35,7 @@ export default function FeatureGame() {
           <GameItem
             title={'Valorant'}
             category="Desktop"
-            thumbnail="Thumbnail-4"
+            thumbnail="Thumbnail-5"
           />
         </div>
       </div>
