@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 
 function SignUpSuccess() {
   return (
@@ -11,8 +11,7 @@ function SignUpSuccess() {
             height="300"
             viewBox="0 0 316 300"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0)">
               <path
                 d="M18.4405 59.8199C21.1258 58.9441 22.5952 56.0494 21.7224 53.3546C20.8496 50.6599 17.9651 49.1854 15.2797 50.0612C12.5944 50.937 11.1251 53.8317 11.9978 56.5265C12.8707 59.2212 15.7551 60.6959 18.4405 59.8199Z"
@@ -94,8 +93,7 @@ function SignUpSuccess() {
                 y1="12.3578"
                 x2="315.704"
                 y2="12.3578"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#FF66A9" />
                 <stop offset="1" stopColor="#F53689" />
               </linearGradient>
@@ -105,8 +103,7 @@ function SignUpSuccess() {
                 y1="280.629"
                 x2="29.7081"
                 y2="280.629"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#83A6FF" />
                 <stop offset="1" stopColor="#5A78FF" />
               </linearGradient>
@@ -116,8 +113,7 @@ function SignUpSuccess() {
                 y1="170.246"
                 x2="282.058"
                 y2="170.246"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#83A6FF" />
                 <stop offset="1" stopColor="#5A78FF" />
               </linearGradient>
@@ -127,8 +123,7 @@ function SignUpSuccess() {
                 y1="48.41"
                 x2="247.292"
                 y2="48.41"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#FF66A9" />
                 <stop offset="1" stopColor="#F53689" />
               </linearGradient>
@@ -138,8 +133,7 @@ function SignUpSuccess() {
                 y1="172.796"
                 x2="285.756"
                 y2="172.796"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#83A6FF" />
                 <stop offset="1" stopColor="#5A78FF" />
               </linearGradient>
@@ -149,8 +143,7 @@ function SignUpSuccess() {
                 y1="181.715"
                 x2="285.277"
                 y2="181.715"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4F6AFF" />
                 <stop offset="1" stopColor="#657EFF" stopOpacity="0" />
               </linearGradient>
@@ -160,8 +153,7 @@ function SignUpSuccess() {
                 y1="188.119"
                 x2="230.382"
                 y2="164.142"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.0113208" stopColor="#C2D1FF" />
                 <stop offset="1" stopColor="white" />
               </linearGradient>
@@ -171,8 +163,7 @@ function SignUpSuccess() {
                 y1="91.3891"
                 x2="16.887"
                 y2="91.3891"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#FF66A9" />
                 <stop offset="1" stopColor="#F53689" />
               </linearGradient>
@@ -193,13 +184,13 @@ function SignUpSuccess() {
           </p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <a
-            className="btn btn-top-up fw-medium text-lg text-white rounded-pill"
-            href="../index.html"
-            role="button"
-          >
-            Top Up
-          </a>
+          <Link href="/">
+            <a
+              className="btn btn-top-up fw-medium text-lg text-white rounded-pill"
+              role="button">
+              Top Up
+            </a>
+          </Link>
         </div>
       </div>
     </section>

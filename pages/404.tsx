@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function NotFound() {
   return (
     <section className="not-found mx-auto pt-145 pb-md-212 pb-100">
@@ -9,8 +11,7 @@ function NotFound() {
             height="300"
             viewBox="0 0 483 300"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0)">
               <path
                 d="M6.92621 184.487C10.593 184.487 13.8524 181.579 13.8524 177.424C13.8524 173.684 11.0004 170.36 6.92621 170.36C3.25939 170.36 0 173.268 0 177.424C0 181.163 2.85197 184.487 6.92621 184.487Z"
@@ -240,8 +241,7 @@ function NotFound() {
                 y1="177.412"
                 x2="13.1704"
                 y2="177.412"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#83A6FF" />
                 <stop offset="1" stopColor="#5A78FF" />
               </linearGradient>
@@ -251,8 +251,7 @@ function NotFound() {
                 y1="25.0788"
                 x2="480.658"
                 y2="25.0788"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#83A6FF" />
                 <stop offset="1" stopColor="#5A78FF" />
               </linearGradient>
@@ -262,8 +261,7 @@ function NotFound() {
                 y1="252.456"
                 x2="377.296"
                 y2="258.937"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.00289017" stopColor="#606673" stopOpacity="0" />
                 <stop offset="1" stopColor="#373C47" />
               </linearGradient>
@@ -273,8 +271,7 @@ function NotFound() {
                 y1="221.979"
                 x2="232.522"
                 y2="48.4336"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.00289017" stopColor="#606673" stopOpacity="0" />
                 <stop offset="1" stopColor="#373C47" />
               </linearGradient>
@@ -284,8 +281,7 @@ function NotFound() {
                 y1="78.748"
                 x2="422.924"
                 y2="78.748"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop stopColor="#FF66A9" />
                 <stop offset="1" stopColor="#F53689" />
               </linearGradient>
@@ -295,8 +291,7 @@ function NotFound() {
                 y1="144.362"
                 x2="459.972"
                 y2="169.644"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.00289017" stopColor="#606673" stopOpacity="0" />
                 <stop offset="1" stopColor="#373C47" />
               </linearGradient>
@@ -306,8 +301,7 @@ function NotFound() {
                 y1="144.362"
                 x2="53.238"
                 y2="169.644"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.00289017" stopColor="#606673" stopOpacity="0" />
                 <stop offset="1" stopColor="#373C47" />
               </linearGradient>
@@ -317,8 +311,7 @@ function NotFound() {
                 y1="71.8503"
                 x2="226.322"
                 y2="47.7445"
-                gradientUnits="userSpaceOnUse"
-              >
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0.00289017" stopColor="#3F5073" stopOpacity="0" />
                 <stop offset="1" stopColor="#283247" />
               </linearGradient>
@@ -339,13 +332,13 @@ function NotFound() {
           </p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <a
-            className="btn btn-homepage fw-medium text-lg text-white rounded-pill"
-            href="#"
-            role="button"
-          >
-            Homepage
-          </a>
+          <Link href="/">
+            <a
+              className="btn btn-homepage fw-medium text-lg text-white rounded-pill"
+              role="button">
+              Homepage
+            </a>
+          </Link>
         </div>
       </div>
     </section>
