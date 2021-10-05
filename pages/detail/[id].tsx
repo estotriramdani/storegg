@@ -19,6 +19,7 @@ export default function index() {
   const [payments, setPayments] = useState([]);
   const getVoucherDetailAPI = useCallback(async (id) => {
     const data = await getVoucherDetail(id);
+    localStorage.setItem('data_item', JSON.stringify(data));
     setDataItem(data.detail);
     setPayments(data.payment);
     setNominals(data.detail.nominals);

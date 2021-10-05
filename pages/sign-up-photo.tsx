@@ -42,7 +42,7 @@ function SignUpPhoto() {
     formData.append('status', 'Y');
     formData.append('favorite', favorite);
     const data = await setSignUp(formData);
-    if (data?.error === 1) {
+    if (data.error) {
       toast.error(data?.message);
     } else {
       toast.success('Register berhasil');

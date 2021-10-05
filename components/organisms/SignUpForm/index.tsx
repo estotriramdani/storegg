@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function SignUpForm() {
   const [name, setName] = useState('');
@@ -71,12 +72,13 @@ export default function SignUpForm() {
           onClick={onSubmit}>
           Continue
         </button>
-        <a
-          className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill"
-          href="/sign-in"
-          role="button">
-          Sign In
-        </a>
+        <Link href="/sign-in">
+          <a
+            className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill"
+            role="button">
+            Sign In
+          </a>
+        </Link>
       </div>
     </>
   );

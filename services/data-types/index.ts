@@ -38,3 +38,27 @@ export interface GameCategoryTypes {
   name: string;
   __v: number;
 }
+
+export interface LoginTypes {
+  email: string;
+  password: string;
+}
+
+export interface ResponseAPIStructure {
+  error: boolean;
+  message: string;
+  data: any;
+}
+
+export interface JWTPayLoadTypes {
+  iat?: string;
+  player: UserInfoTypes;
+}
+
+export interface UserInfoTypes {
+  id: string;
+  avatar: string;
+  email: string;
+  phoneNumber: string;
+  username: string;
+}
