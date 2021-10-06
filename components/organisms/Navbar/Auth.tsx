@@ -4,7 +4,7 @@ import Cookies from 'js-cookie';
 import jwtDecode from 'jwt-decode';
 import { JWTPayLoadTypes } from '../../../services/data-types';
 import { useRouter } from 'next/router';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Auth = () => {
   const [user, setUser] = useState({
@@ -106,7 +106,6 @@ const Auth = () => {
           </a>
         </Link>
       </li>
-      <ToastContainer />
     </>
   );
 };

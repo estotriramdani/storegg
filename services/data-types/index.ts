@@ -62,3 +62,10 @@ export interface UserInfoTypes {
   phoneNumber: string;
   username: string;
 }
+
+export interface DataTopUpTypes {
+  paymentItem: PaymentTypes;
+  nominalItem: NominalTypes;
+  verifyID: string;
+  bankAccountName: string;
+}
